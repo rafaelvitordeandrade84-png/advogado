@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hero — Escritório Jurídico</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="body">
+
+    <!-- ─── NAVBAR ─── -->
+    <nav class="nav">
+      <div class="nav__inner">
+
+        <a href="#" class="nav__logo">
+          <svg class="nav__logo-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="14" y1="2"  x2="14" y2="26" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="2"  y1="14" x2="26" y2="14" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="5.5" y1="5.5" x2="22.5" y2="22.5" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="22.5" y1="5.5" x2="5.5" y2="22.5" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <span class="nav__logo-text">Escritório Silva</span>
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Áreas</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Equipe</a></li>
+        </ul>
+
+        <a href="#" class="nav__cta">Consulta</a>
+
+        <button class="nav__hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- ─── MOBILE MENU ─── -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__backdrop" id="menuBackdrop"></div>
+      <div class="mobile-menu__card">
+        <div class="mobile-menu__header">
+          <a href="#" class="nav__logo">
+            <svg class="nav__logo-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="14" y1="2"  x2="14" y2="26" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round"/>
+              <line x1="2"  y1="14" x2="26" y2="14" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round"/>
+              <line x1="5.5" y1="5.5" x2="22.5" y2="22.5" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round"/>
+              <line x1="22.5" y1="5.5" x2="5.5" y2="22.5" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+            <span class="nav__logo-text">Escritório Silva</span>
+          </a>
+          <button class="mobile-menu__close" id="closeBtn">✕</button>
+        </div>
+        <ul class="mobile-menu__links">
+          <li><a href="#" onclick="closeMenu()">Sobre</a></li>
+          <li><a href="#" onclick="closeMenu()">Áreas</a></li>
+          <li><a href="#" onclick="closeMenu()">Blog</a></li>
+          <li><a href="#" onclick="closeMenu()">Equipe</a></li>
+        </ul>
+        <a href="#" class="mobile-menu__cta">Agendar Consulta</a>
+      </div>
+    </div>
+
+
+    <!-- ─── HERO ─── -->
+    <div class="hero-section">
+      <section class="hero">
+
+        <div class="hero__left">
+          <div class="badge">
+            <div class="badge__stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span class="badge__text">5.0 (980 Avaliações)</span>
+          </div>
+
+          <h1 class="hero__heading">
+            Soluções jurídicas estratégicas para
+            <span>quem exige resultado</span>
+          </h1>
+
+          <p class="hero__desc">
+            Atuamos com estratégia, precisão e foco em resultado, oferecendo soluções jurídicas seguras para cada etapa do seu caso.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#" class="btn-primary">
+              Solicitar atendimento
+              <span class="btn-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="13 6 19 12 13 18"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="hero__trust-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Resposta em até 24h</span>
+            </div>
+            <div class="hero__trust-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>Sigilo garantido</span>
+            </div>
+            <div class="hero__trust-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>+10 anos de experiência</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="img-card">
+            <img src="img/Novo Projeto (1).webp" alt="">
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </div><!-- /.body -->
+
+
+  <!-- ─── SECTION TRANSITION ─── -->
+  <div class="section-transition">
+    <span class="section-transition__label">Escritório Silva · Advocacia</span>
+    <p class="section-transition__text">
+      Mais de uma década defendendo interesses de clientes
+      <span>em todo o Brasil.</span>
+    </p>
+    <div class="section-transition__pills">
+      <div class="section-transition__pill">Atendimento Humanizado</div>
+      <div class="section-transition__pill">Ética e Transparência</div>
+      <div class="section-transition__pill">Estratégia Jurídica</div>
+    </div>
+  </div>
+
+
+  <!-- ─── FEATURES 2 ─── -->
+  <section class="features2">
+    <div class="features2__inner">
+
+      <div class="features2__left">
+        <div class="features2__img-wrap">
+            <img
+    src="img/magnific_advogado-moderno-em-escri_3008149553.webp"
+    alt="Advogado sênior"
+    loading="lazy"
+    decoding="async"
+  />
+        </div>
+      </div>
+
+      <div class="features2__right">
+        <span class="features2__badge">Conheça o advogado</span>
+        <h2 class="features2__heading">
+          Excelência jurídica e resultados que
+          <span>falam por si</span>
+        </h2>
+        <p class="features2__desc">
+          Cada caso é tratado com estratégia e dedicação total, do primeiro contato até a resolução final — com transparência em cada etapa.
+        </p>
+        <ul class="features2__list">
+          <li class="features2__item">
+            <span class="features2__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            Acompanhamento em tempo real do seu processo
+          </li>
+          <li class="features2__item">
+            <span class="features2__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            Estratégia jurídica personalizada para cada cliente
+          </li>
+          <li class="features2__item">
+            <span class="features2__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            Histórico comprovado de êxito em múltiplas áreas
+          </li>
+        </ul>
+        <div class="hero__cta">
+          <a href="#" class="btn-primary2">
+            Solicitar atendimento
+            <span class="btn-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="13 6 19 12 13 18"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ─── ÁREAS DE ATUAÇÃO ─── -->
+  <section class="areas">
+    <div class="areas__inner">
+
+     <div class="areas__header">
+
+  <span class="areas__badge">Áreas de Atuação</span>
+
+  <h2 class="areas__heading">
+    Expertise jurídica em todas as
+    <span>frentes que importam</span>
+  </h2>
+  <p class="areas__desc">
+    Oferecemos assessoria completa nas principais áreas do direito, com equipe especializada e dedicação integral a cada caso.
+  </p>
+</div>
+
+      <div class="areas__grid">
+
+     <div class="areas__card">
+  <div class="areas__icon">
+    <img src="img/balanca-de-peso (1).png" alt="Direito Empresarial" class="areas__icon-img" loading="lazy" decoding="async">
+  </div>
+  <h3 class="areas__card-title">Direito Empresarial</h3>
+  <p class="areas__card-desc">Assessoria jurídica completa para empresas, contratos, fusões e proteção patrimonial.</p>
+</div>
+
+<div class="areas__card">
+  <div class="areas__icon">
+    <img src="img/silhueta-de-icone-de-casa.png" alt="Direito de Família" class="areas__icon-img" loading="lazy" decoding="async">
+  </div>
+  <h3 class="areas__card-title">Direito de Família</h3>
+  <p class="areas__card-desc">Divórcio, guarda, inventário e planejamento sucessório com discrição e humanidade.</p>
+</div>
+
+<div class="areas__card">
+  <div class="areas__icon">
+    <img src="img/documentos-google.png" alt="Direito Civil" class="areas__icon-img" loading="lazy" decoding="async">
+  </div>
+  <h3 class="areas__card-title">Direito Civil</h3>
+  <p class="areas__card-desc">Resolução de conflitos contratuais, indenizações e responsabilidade civil.</p>
+</div>
+
+<div class="areas__card">
+  <div class="areas__icon">
+    <img src="img/mala-de-viagem.png" alt="Direito Trabalhista" class="areas__icon-img" loading="lazy" decoding="async">
+  </div>
+  <h3 class="areas__card-title">Direito Trabalhista</h3>
+  <p class="areas__card-desc">Defesa de direitos trabalhistas, reclamatórias e consultoria preventiva para empresas.</p>
+</div>
+
+<div class="areas__card">
+  <div class="areas__icon">
+    <img src="img/tribunal.png" alt="Direito Penal" class="areas__icon-img" loading="lazy" decoding="async">
+  </div>
+  <h3 class="areas__card-title">Direito Penal</h3>
+  <p class="areas__card-desc">Defesa criminal estratégica, habeas corpus e acompanhamento em todas as fases processuais.</p>
+</div>
+
+<div class="areas__card">
+  <div class="areas__icon">
+    <img src="img/chaves.png" alt="Direito Imobiliário" class="areas__icon-img" loading="lazy" decoding="async">
+  </div>
+  <h3 class="areas__card-title">Direito Imobiliário</h3>
+  <p class="areas__card-desc">Compra, venda, locação e regularização de imóveis com segurança jurídica total.</p>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── PROCESSO ─── -->
+  <section class="process">
+    <div class="process__inner">
+
+      <div class="process__header">
+        <span class="process__badge">Processo</span>
+        <h2 class="process__heading">
+          Seu caso, conduzido
+          <span>com precisão.</span>
+        </h2>
+        <p class="process__desc">
+          Do primeiro contato à resolução final, cada etapa é gerenciada com estratégia e total transparência.
+        </p>
+      </div>
+
+      <div class="process__grid">
+
+        <div class="process__card">
+          <div class="process__number">01</div>
+          <h3 class="process__card-title">Consulta Inicial</h3>
+          <p class="process__card-desc">Apresente seu caso em uma conversa confidencial. Analisamos os fatos e identificamos o melhor caminho jurídico.</p>
+        </div>
+
+        <div class="process__card">
+          <div class="process__number">02</div>
+          <h3 class="process__card-title">Estratégia Personalizada</h3>
+          <p class="process__card-desc">Elaboramos um plano de ação sob medida, com prazos, etapas e objetivos claros para o seu caso.</p>
+        </div>
+
+        <div class="process__card">
+          <div class="process__number">03</div>
+          <h3 class="process__card-title">Acompanhamento Ativo</h3>
+          <p class="process__card-desc">Atuamos com dedicação total em cada fase do processo, mantendo você informado em tempo real.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── MÉTRICAS INLINE ─── -->
+  <section class="mrow-wrap">
+    <div class="mrow">
+
+      <div class="mrow__left">
+        <span class="mrow__badge">Resultados</span>
+        <h2 class="mrow__title">Defendendo interesses com <em>resultado</em> comprovado</h2>
+        <p class="mrow__desc">Mais de uma década atuando com estratégia, ética e dedicação total para cada cliente.</p>
+      </div>
+
+      <div class="mrow__divider"></div>
+
+      <div class="mrow__cards">
+
+        <div class="mrow__card">
+          <p class="mrow__card-value">+10</p>
+          <p class="mrow__card-desc">Anos de experiência em todo o Brasil.</p>
+        </div>
+
+        <div class="mrow__card">
+          <p class="mrow__card-value">92%</p>
+          <p class="mrow__card-desc">Taxa de êxito nos casos atendidos.</p>
+        </div>
+
+        <div class="mrow__card">
+          <div class="mrow__card-top">
+            <p class="mrow__card-value">4.9</p>
+            <div class="mrow__card-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+          <p class="mrow__card-desc">Avaliado por 980 clientes satisfeitos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── DEPOIMENTOS ─── -->
+  <section class="testimonials">
+    <div class="testimonials__inner">
+
+    <div class="testimonials__header">
+
+  <span class="testimonials__badge">Depoimentos</span>
+
+  <h2 class="testimonials__heading">
+    Nossos clientes confiam em nós para
+    <span>resultados reais</span>
+  </h2>
+</div>
+
+      <div class="testimonials__grid">
+<div class="testimonials__card">
+  <div class="testimonials__quote">"</div>
+  <p class="testimonials__text">Atendimento excepcional do início ao fim. A equipe me orientou em cada etapa com segurança e clareza total.</p>
+  <div class="testimonials__author">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sophia Reynolds" class="testimonials__avatar" loading="lazy" decoding="async"/>
+    <div class="testimonials__info">
+      <span class="testimonials__name">Sophia Reynolds</span>
+      <div class="testimonials__stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="testimonials__card">
+  <div class="testimonials__quote">"</div>
+  <p class="testimonials__text">Sou muito grato pelo suporte jurídico impecável. Desde a primeira ligação, me senti completamente amparado e confiante.</p>
+  <div class="testimonials__author">
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Daniel Foster" class="testimonials__avatar" loading="lazy" decoding="async"/>
+    <div class="testimonials__info">
+      <span class="testimonials__name">Daniel Foster</span>
+      <div class="testimonials__stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="testimonials__card">
+  <div class="testimonials__quote">"</div>
+  <p class="testimonials__text">Dedicação e conhecimento incomparáveis. Me senti apoiado e seguro durante todo o processo jurídico.</p>
+  <div class="testimonials__author">
+    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="James Carter" class="testimonials__avatar" loading="lazy" decoding="async"/>
+    <div class="testimonials__info">
+      <span class="testimonials__name">James Carter</span>
+      <div class="testimonials__stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="testimonials__card">
+  <div class="testimonials__quote">"</div>
+  <p class="testimonials__text">Profissionalismo exemplar em cada detalhe. Meu caso foi resolvido com rapidez e total transparência.</p>
+  <div class="testimonials__author">
+    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Laura Mendes" class="testimonials__avatar" loading="lazy" decoding="async"/>
+    <div class="testimonials__info">
+      <span class="testimonials__name">Laura Mendes</span>
+      <div class="testimonials__stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="testimonials__card">
+  <div class="testimonials__quote">"</div>
+  <p class="testimonials__text">Recomendo sem hesitar. Equipe atenciosa, estratégia clara e resultado acima do que eu esperava.</p>
+  <div class="testimonials__author">
+    <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="Carlos Souza" class="testimonials__avatar" loading="lazy" decoding="async"/>
+    <div class="testimonials__info">
+      <span class="testimonials__name">Carlos Souza</span>
+      <div class="testimonials__stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="testimonials__card">
+  <div class="testimonials__quote">"</div>
+  <p class="testimonials__text">Fui tratado com respeito e atenção desde o primeiro contato. Saí com meus direitos garantidos.</p>
+  <div class="testimonials__author">
+    <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Ana Paula Lima" class="testimonials__avatar" loading="lazy" decoding="async"/>
+    <div class="testimonials__info">
+      <span class="testimonials__name">Ana Paula Lima</span>
+      <div class="testimonials__stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── PARA QUEM ─── -->
+  <section class="forwhom">
+    <div class="forwhom__inner">
+
+      <div class="forwhom__header">
+        <span class="forwhom__badge">Para quem são</span>
+        <h2 class="forwhom__heading">
+          Para quem são nossas
+          <span>soluções jurídicas</span>
+        </h2>
+        <p class="forwhom__desc">
+          Nosso trabalho é para quem leva seus direitos a sério e entende que contar com um advogado experiente faz toda a diferença.
+        </p>
+      </div>
+
+      <div class="forwhom__grid">
+
+        <div class="forwhom__card">
+          <span class="forwhom__number">// 01</span>
+          <h3 class="forwhom__card-title">Pessoas Físicas</h3>
+          <p class="forwhom__card-desc"><strong>Indivíduos que enfrentam conflitos familiares, trabalhistas ou civis</strong> e precisam de orientação jurídica clara, humana e eficiente para proteger seus direitos.</p>
+          <span class="forwhom__tag">// ESCRITÓRIO SILVA</span>
+        </div>
+
+        <div class="forwhom__card">
+          <span class="forwhom__number">// 02</span>
+          <h3 class="forwhom__card-title">Empresários e Empresas</h3>
+          <p class="forwhom__card-desc"><strong>Empreendedores e organizações que buscam segurança jurídica</strong> em contratos, relações trabalhistas e decisões estratégicas — sem surpresas no caminho.</p>
+          <span class="forwhom__tag">// ESCRITÓRIO SILVA</span>
+        </div>
+
+        <div class="forwhom__card">
+          <span class="forwhom__number">// 03</span>
+          <h3 class="forwhom__card-title">Famílias em Transição</h3>
+          <p class="forwhom__card-desc"><strong>Famílias que passam por divórcios, inventários ou disputas de guarda</strong> e precisam de um advogado que combine técnica jurídica com sensibilidade humana.</p>
+          <span class="forwhom__tag">// ESCRITÓRIO SILVA</span>
+        </div>
+
+        <div class="forwhom__card">
+          <span class="forwhom__number">// 04</span>
+          <h3 class="forwhom__card-title">Acusados e Réus</h3>
+          <p class="forwhom__card-desc"><strong>Pessoas que enfrentam processos criminais</strong> e necessitam de defesa estratégica, ágil e comprometida com a presunção de inocência e o devido processo legal.</p>
+          <span class="forwhom__tag">// ESCRITÓRIO SILVA</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── FAQ ─── -->
+  <section class="faq">
+    <div class="faq__inner">
+
+      <div class="faq__header">
+        <span class="faq__badge">FAQ</span>
+        <h2 class="faq__heading">
+          Perguntas
+          <span>frequentes</span>
+        </h2>
+        <p class="faq__desc">
+          Tire suas dúvidas sobre nossos serviços, atendimento e como funciona o processo jurídico com o Escritório Silva.
+        </p>
+      </div>
+
+      <div class="faq__list">
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Como funciona a primeira consulta?</span>
+            <div class="faq__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq__answer">
+            <p>A primeira consulta é uma conversa confidencial onde você apresenta seu caso. Analisamos os fatos, esclarecemos suas dúvidas e indicamos o melhor caminho jurídico, sem compromisso.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Quais áreas do direito o escritório atende?</span>
+            <div class="faq__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq__answer">
+            <p>Atuamos nas áreas de Direito Civil, Empresarial, Trabalhista, Família, Penal e Imobiliário. Nossa equipe é especializada para atender cada caso com a expertise necessária.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>O atendimento é presencial ou pode ser online?</span>
+            <div class="faq__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq__answer">
+            <p>Oferecemos atendimento tanto presencial quanto online, por videochamada. Você escolhe o formato mais conveniente, com o mesmo nível de qualidade e sigilo garantido.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Como acompanho o andamento do meu processo?</span>
+            <div class="faq__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq__answer">
+            <p>Mantemos nossos clientes informados em tempo real sobre cada movimentação processual. Você recebe atualizações diretamente pelo WhatsApp ou e-mail, conforme sua preferência.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Os honorários são cobrados como?</span>
+            <div class="faq__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq__answer">
+            <p>Os honorários variam conforme a complexidade do caso e são apresentados com total transparência antes de qualquer contratação. Trabalhamos com tabelas claras e sem surpresas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── CONTATO ─── -->
+  <section class="contact">
+    <div class="contact__inner">
+
+      <div class="contact__left">
+        <span class="contact__badge">Contato</span>
+        <h2 class="contact__heading">
+          Vamos conversar <br><span>sobre seu caso</span>
+        </h2>
+        <p class="contact__desc">
+          Seja para agendar sua primeira consulta ou tirar dúvidas, estamos prontos para te atender com atenção e sigilo.
+        </p>
+
+        <div class="contact__form">
+
+          <div class="contact__field">
+            <input type="text" id="nome" placeholder="Nome completo" />
+          </div>
+
+          <div class="contact__field">
+            <input type="tel" id="telefone" placeholder="Telefone / WhatsApp" />
+          </div>
+
+          <div class="contact__row">
+            <div class="contact__field">
+              <input type="date" id="data" />
+            </div>
+            <div class="contact__field">
+              <input type="time" id="hora" />
+            </div>
+          </div>
+
+          <div class="contact__field">
+            <textarea id="mensagem" placeholder="Descreva brevemente seu caso..." rows="4"></textarea>
+          </div>
+
+          <div class="hero__cta">
+            <a href="#" class="btn-primary contact__submit">
+              Solicitar atendimento
+              <span class="btn-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="13 6 19 12 13 18"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="contact__right">
+        <div class="contact__map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6522!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzknMDcuOSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização do escritório">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__col">
+        <span class="footer__col-title">Páginas</span>
+        <ul class="footer__links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Áreas</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Equipe</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--center">
+        <p class="footer__phrase">
+          "Seu direito merece defesa firme —
+          <span>conte conosco."</span>
+        </p>
+        <div class="footer__ctas">
+          <a href="#" class="footer__btn footer__btn--filled">
+            Solicitar consulta
+            <span class="footer__btn-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </span>
+          </a>
+        </div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-btn" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer__social-btn" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <a href="#" class="footer__social-btn" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer__social-btn" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+        <p class="footer__copy">© 2025 Escritório Silva · Todos os direitos reservados</p>
+      </div>
+
+      <div class="footer__col footer__col--right">
+        <span class="footer__col-title">Detalhes</span>
+        <ul class="footer__links">
+          <li><a href="#">Direito Civil</a></li>
+          <li><a href="#">Direito Empresarial</a></li>
+          <li><a href="#">Direito de Família</a></li>
+          <li><a href="#">Direito Trabalhista</a></li>
+          <li><a href="#">Direito Penal</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ─── SCRIPTS ─── -->
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const closeBtn     = document.getElementById('closeBtn');
+    const mobileMenu   = document.getElementById('mobileMenu');
+    const menuBackdrop = document.getElementById('menuBackdrop');
+
+    function openMenu()  { mobileMenu.classList.add('is-open'); document.body.style.overflow = 'hidden'; }
+    function closeMenu() { mobileMenu.classList.remove('is-open'); document.body.style.overflow = ''; }
+
+    hamburgerBtn.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    menuBackdrop.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+ document.addEventListener("DOMContentLoaded", () => {
+
+  gsap.registerPlugin(ScrollTrigger); // ← movido pro topo
+
+  // ── HERO ──
+  gsap.set(".badge",          { opacity: 0, y: 16 });
+  gsap.set(".hero__heading",  { opacity: 0, y: 28 });
+  gsap.set(".hero__desc",     { opacity: 0, y: 20 });
+  gsap.set(".hero__cta",      { opacity: 0, y: 16 });
+  gsap.set(".hero__trust",    { opacity: 0, y: 16 });
+
+  gsap.timeline({ delay: 0.2 })
+  .to(".badge",         { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" })
+  .to(".hero__heading", { opacity: 1, y: 0, duration: 0.7,  ease: "power3.out" }, "-=0.25")
+  .to(".hero__desc",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" }, "-=0.3")
+  .to(".hero__cta",     { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, "-=0.2")
+  .to(".hero__trust",   { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, "-=0.2");
+
+  // ── SECTION TRANSITION ──
+  gsap.set(".section-transition__label", { opacity: 0, y: 16 });
+  gsap.set(".section-transition__text",  { opacity: 0, y: 32 });
+  gsap.set(".section-transition__pill",  { opacity: 0, y: 20 });
+
+  gsap.timeline({
+    scrollTrigger: { trigger: ".section-transition", start: "top 80%", toggleActions: "play none none none" }
+  })
+  .to(".section-transition__label", { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" })
+  .to(".section-transition__text",  { opacity: 1, y: 0, duration: 0.7,  ease: "power3.out" }, "-=0.2")
+  .to(".section-transition__pill",  { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", stagger: 0.1 }, "-=0.3");
+
+  // ── FEATURES 2 ──
+  gsap.set(".features2__img-wrap",  { opacity: 0, y: 50 }); // ← era x: -50
+  gsap.set(".features2__badge",     { opacity: 0, y: 16 });
+  gsap.set(".features2__heading",   { opacity: 0, y: 24 });
+  gsap.set(".features2__desc",      { opacity: 0, y: 20 });
+  gsap.set(".features2__item",      { opacity: 0, y: 16 }); // ← era x: -16
+  gsap.set(".features2 .hero__cta", { opacity: 0, y: 16 });
+
+  gsap.timeline({
+    scrollTrigger: { trigger: ".features2", start: "top 75%", toggleActions: "play none none none" }
+  })
+  .to(".features2__img-wrap", { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" })
+  .to(".features2__badge",    { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, "-=0.5")
+  .to(".features2__heading",  { opacity: 1, y: 0, duration: 0.6,  ease: "power3.out" }, "-=0.3")
+  .to(".features2__desc",     { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" }, "-=0.3")
+  .to(".features2__item",     { opacity: 1, y: 0, duration: 0.4,  ease: "power2.out", stagger: 0.1 }, "-=0.2")
+  .to(".features2 .hero__cta",{ opacity: 1, y: 0, duration: 0.4,  ease: "power2.out" }, "-=0.1");
+
+  // ── ÁREAS ──
+  gsap.set(".areas__badge",   { opacity: 0, y: 16 });
+  gsap.set(".areas__heading", { opacity: 0, y: 28 });
+  gsap.set(".areas__desc",    { opacity: 0, y: 20 });
+  gsap.set(".areas__card",    { opacity: 0, y: 36 });
+
+  gsap.timeline({
+    scrollTrigger: { trigger: ".areas", start: "top 78%", toggleActions: "play none none none" }
+  })
+  .to(".areas__badge",   { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" })
+  .to(".areas__heading", { opacity: 1, y: 0, duration: 0.65, ease: "power3.out" }, "-=0.25")
+  .to(".areas__desc",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" }, "-=0.3")
+  .to(".areas__card",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out", stagger: 0.08 }, "-=0.2");
+
+  // ── PROCESSO ──
+  gsap.set(".process__badge",   { opacity: 0, y: 16 });
+  gsap.set(".process__heading", { opacity: 0, y: 28 });
+  gsap.set(".process__desc",    { opacity: 0, y: 20 });
+  gsap.set(".process__card",    { opacity: 0, y: 36 });
+
+  gsap.timeline({
+    scrollTrigger: { trigger: ".process", start: "top 78%", toggleActions: "play none none none" }
+  })
+  .to(".process__badge",   { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" })
+  .to(".process__heading", { opacity: 1, y: 0, duration: 0.65, ease: "power3.out" }, "-=0.25")
+  .to(".process__desc",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" }, "-=0.3")
+  .to(".process__card",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out", stagger: 0.1 }, "-=0.2");
+
+  // ── MÉTRICAS ──
+  gsap.set(".mrow__badge",  { opacity: 0, y: 16 });
+  gsap.set(".mrow__title",  { opacity: 0, y: 24 });
+  gsap.set(".mrow__desc",   { opacity: 0, y: 20 });
+  gsap.set(".mrow__card",   { opacity: 0, y: 30 });
+
+  gsap.timeline({
+    scrollTrigger: { trigger: ".mrow-wrap", start: "top 80%", toggleActions: "play none none none" }
+  })
+  .to(".mrow__badge",  { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" })
+  .to(".mrow__title",  { opacity: 1, y: 0, duration: 0.6,  ease: "power3.out" }, "-=0.25")
+  .to(".mrow__desc",   { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" }, "-=0.3")
+  .to(".mrow__card",   { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", stagger: 0.1 }, "-=0.2");
+
+  // ── DEPOIMENTOS ──
+  gsap.set(".testimonials__badge",   { opacity: 0, y: 16 });
+  gsap.set(".testimonials__heading", { opacity: 0, y: 28 });
+  gsap.set(".testimonials__card",    { opacity: 0, y: 36 });
+
+  gsap.timeline({
+    scrollTrigger: { trigger: ".testimonials", start: "top 78%", toggleActions: "play none none none" }
+  })
+  .to(".testimonials__badge",   { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" })
+  .to(".testimonials__heading", { opacity: 1, y: 0, duration: 0.65, ease: "power3.out" }, "-=0.25")
+  .to(".testimonials__card",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out", stagger: 0.08 }, "-=0.2");
+
+  // ── PARA QUEM ──
+  gsap.set(".forwhom__badge",   { opacity: 0, y: 16 });
+  gsap.set(".forwhom__heading", { opacity: 0, y: 28 });
+  gsap.set(".forwhom__desc",    { opacity: 0, y: 20 });
+  gsap.set(".forwhom__card",    { opacity: 0, y: 36 });
+
+  gsap.timeline({
+    scrollTrigger: { trigger: ".forwhom", start: "top 78%", toggleActions: "play none none none" }
+  })
+  .to(".forwhom__badge",   { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" })
+  .to(".forwhom__heading", { opacity: 1, y: 0, duration: 0.65, ease: "power3.out" }, "-=0.25")
+  .to(".forwhom__desc",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" }, "-=0.3")
+  .to(".forwhom__card",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out", stagger: 0.09 }, "-=0.2");
+
+  // ── FAQ ──
+  gsap.set(".faq__badge",   { opacity: 0, y: 16 });
+  gsap.set(".faq__heading", { opacity: 0, y: 28 });
+  gsap.set(".faq__desc",    { opacity: 0, y: 20 });
+  gsap.set(".faq__item",    { opacity: 0, y: 24 });
+
+  gsap.timeline({
+    scrollTrigger: { trigger: ".faq", start: "top 78%", toggleActions: "play none none none" }
+  })
+  .to(".faq__badge",   { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" })
+  .to(".faq__heading", { opacity: 1, y: 0, duration: 0.65, ease: "power3.out" }, "-=0.25")
+  .to(".faq__desc",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" }, "-=0.3")
+  .to(".faq__item",    { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", stagger: 0.08 }, "-=0.2");
+
+  // ── FAQ ACCORDION ──
+  document.querySelectorAll('.faq__question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item   = btn.closest('.faq__item');
+      const isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.faq__item').forEach(i => i.classList.remove('is-open'));
+      if (!isOpen) item.classList.add('is-open');
+    });
+  });
+
+  // ── CONTATO ──
+  gsap.set(".contact__badge",   { opacity: 0, y: 16 });
+  gsap.set(".contact__heading", { opacity: 0, y: 28 });
+  gsap.set(".contact__desc",    { opacity: 0, y: 20 });
+  gsap.set(".contact__form",    { opacity: 0, y: 30 });
+  gsap.set(".contact__right",   { opacity: 0, y: 40 }); // ← era x: 40
+
+  gsap.timeline({
+    scrollTrigger: { trigger: ".contact", start: "top 78%", toggleActions: "play none none none" }
+  })
+  .to(".contact__badge",   { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" })
+  .to(".contact__heading", { opacity: 1, y: 0, duration: 0.65, ease: "power3.out" }, "-=0.25")
+  .to(".contact__desc",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" }, "-=0.3")
+  .to(".contact__form",    { opacity: 1, y: 0, duration: 0.5,  ease: "power2.out" }, "-=0.2")
+  .to(".contact__right",   { opacity: 1, y: 0, duration: 0.7,  ease: "power3.out" }, "-=0.4");
+
+});
+  </script>
+
+  <script>
+    document.querySelector('.contact__submit').addEventListener('click', function (e) {
+      e.preventDefault();
+      const nome     = document.getElementById('nome').value.trim();
+      const telefone = document.getElementById('telefone').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
+
+      if (!nome || !telefone) {
+        document.querySelectorAll('.contact__field input, .contact__field textarea').forEach(c => {
+          if (!c.value.trim()) {
+            c.style.borderBottomColor = '#e05555';
+            c.addEventListener('input', () => c.style.borderBottomColor = '', { once: true });
+          }
+        });
+        return;
+      }
+
+      const texto = `Olá! Meu nome é ${nome}. ${mensagem || 'Gostaria de agendar uma consulta.'}`;
+      const url   = `https://wa.me/5500000000000?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    });
+  </script>
+
+</body>
+</html>
